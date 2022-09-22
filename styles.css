@@ -1,0 +1,145 @@
+@media screen and (max-width: 600px) {
+    html ,body {
+        font-size: 4vw;
+    }
+}
+@media screen and (min-width: 600px) {
+    html, body {
+        font-size: 20px;
+    }
+}
+:root {
+    --main-black: #021F59;
+    --main-red: #D81159;
+    --main-blue: #023059;
+    --main-lblue: #3C88A6;
+    --main-llblue: #48BED9;
+}
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    background: var(--main-red);
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+.nav-link {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 2vw 0 2vw;
+    font-weight: bold;
+}
+#main-doc {
+    scroll-behavior: smooth;
+}
+#welcome-section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-llblue);
+    background-color: var(--main-black);
+    height: 100vh;
+}
+#welcome-section div {
+    display: grid;
+    place-items: center;
+}
+#welcome-section h1 {
+    margin: auto;
+}
+#welcome-section p {
+    margin: 10px;
+    font-style: italic;
+    color: var(--main-red);
+}
+#projects {
+    background-color: var(--main-blue);
+    margin: 0;
+    padding: 80px 40px 80px 40px;
+}
+#project-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+}
+.cards {
+    display: grid;
+    grid-template: 'div div'
+                    'div div';
+}
+.project-tile:link  {
+    display: grid;
+    place-content: center;
+    margin: 2vh 5vw 2vh 5vw;
+    box-shadow: 0 1px 6px black, 0 1px 4px black;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+}
+.project-tile:visited {
+    color: var(--main-llblue);
+}
+.project-tile:hover {
+    box-shadow: 0 0px 0px;
+    color: white;
+}
+#contact {
+    display: grid;
+    place-content: center;
+    background-color: var(--main-red);
+    padding: 80px 40px 80px 40px;
+    border-bottom: 2.5px solid var(--main-blue)
+}
+#contact h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--main-blue);
+    margin-bottom: 0;
+}
+#contact h1>div {
+    color: var(--main-llblue);
+    margin-top: 0;
+}
+#contact p {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: var(--main-black)
+}
+#links {
+    display: flex;
+    justify-content: center;
+}
+#profile-link:link {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  color: black;
+    box-shadow: 0 1px 6px black, 0 1px 4px black;
+    padding: 15px;
+    margin: 15px;
+    transition: box-shadow 0.5s;
+}
+#profile-link:hover {
+    box-shadow: 0 0px 0px;
+}
+footer {
+    border-top: 2.5px solid var(--main-blue);
+    background-color: var(--main-red);
+    color: white;
+    padding: 40px;
+    font-style: italic;
+}
